@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Now - Realtime Nodejs Socket.io Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <nav>
+            <img src="lg3.png" alt="" class="logo">
+            <h1>Chat Now - Connecting Words!!!</h1>
+        </nav>
+
+        <div class="nameContainer">
+            <!-- Hello welcome to chat box -->
+        </div>
+
+        <div class="container" id="mycont">
+            <!-- <div class="message right">Darshan: Hi</div>
+            <div class="message left">Payal: Heyya</div>
+            <div class="message center">You left</div> -->
+        </div>
+
+        <div class="send">
+            <form action="#" id="sendMessage">
+                <input type="text" name="messageInput" id="messageInput">
+                <button type="submit" id="sendbtn" class="btn">send</button>
+            </form>
+        </div>
+
+        <div class="button">
+            <input type="button" id="exitbutton" value="Exit Chat Box" onclick="myFunction()">
+        </div>
+
+        <div class="exitchatbox">
+            <input type="button" id="exitwindow" value="Exit Chat Now" onclick="closeWin()">
+        </div>
+    </div>
+</body>
+
+</html>

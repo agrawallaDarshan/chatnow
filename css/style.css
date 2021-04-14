@@ -1,0 +1,202 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main::before
+{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(131, 128, 128, 0.5)
+      ),
+    url('../bgca.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    height: 800px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.55;
+}
+
+.logo
+{
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+}
+
+nav h1
+{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    margin: 2px 5px;
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+}
+.nameContainer{
+    max-width:40%;
+    /* border: 2px solid black; */
+    margin: 2px auto;
+    padding: 3px;
+    font-family: 'Kiwi Maru', serif;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Zilla Slab Highlight', 'cursive';
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #898b8d;
+    border-radius: 10px;
+  }
+
+.container
+{
+    max-width: 50%;
+    background-image: url('../Whatsapp.jpg');
+    background-size: cover;
+    height: 70vh;
+    margin: auto;
+    border: 2px solid black;
+    overflow-y: scroll;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.message
+{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 30%;
+    padding: 6px;
+    margin: 10px 4px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    font-family: 'Kiwi Maru', serif;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.message:hover
+{
+    transform: scale(1.1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left
+{
+    background-color: #02ecfd;
+    float: left;
+    clear: both; /*no others floating elements are allowed*/
+}
+
+.right
+{
+    background-color: #78e08f;
+    float: right;
+    clear: both;
+}
+
+.center
+{
+    background-color: #98999d;
+    margin: auto;
+    clear: both;
+    color: black;
+    text-align: center;
+}
+
+#sendMessage
+{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#messageInput
+{
+    width: 46%;
+    margin: 5px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #b4c8e4;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: 600;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.btn
+{
+    width: 55px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 30px;
+    outline: none;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#exitbutton
+{
+    display: block;
+    width: 15%;
+    margin: 13px auto;
+    background-color: rgba(97, 97, 98, 0.815);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease-in 0s;
+    outline: none;
+}
+
+#exitwindow
+{
+    display: block;
+    width: 20%;
+    margin: 13px auto;
+    border-radius: 2px solid black;
+    background-color: rgba(97, 97, 98, 0.815);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease-in 0s;
+    outline: none;
+}
+
+#exitwindow:hover,#exitbutton:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgba(97, 97, 98);
+}
